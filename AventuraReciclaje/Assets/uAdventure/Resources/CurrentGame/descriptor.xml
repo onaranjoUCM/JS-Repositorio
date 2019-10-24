@@ -9,10 +9,13 @@
     <mode playerTransparent="yes" />
     <graphics mode="windowed" />
   </configuration>
-  <extension-objects />
+  <extension-objects>
+    <tracker rawCopy="yes" storageType="LOCAL" traceFormat="CSV" host="" trackingCode="" flushInterval="3" debug="no" />
+  </extension-objects>
   <contents>
     <chapter path="chapter1.xml">
-      <title>ChapterTitle</title>
+      <title>
+      </title>
       <description>
       </description>
     </chapter>

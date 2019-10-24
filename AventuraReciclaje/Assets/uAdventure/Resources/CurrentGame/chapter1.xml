@@ -32,14 +32,277 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
-  <scene id="SceneId" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <character id="Brujilda">
+    <resources name="No name">
+      <condition>
+        <active flag="MuestraBrujilda" />
+      </condition>
+      <asset type="standup" uri="assets/animation/BrujildaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/BrujildaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/BrujildaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/BrujildaAnim.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
+    </actions>
+  </character>
+  <character id="Platano">
+    <resources name="No name">
+      <condition>
+        <inactive flag="Platano" />
+      </condition>
+      <asset type="standup" uri="assets/animation/PlatanoAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/PlatanoAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/PlatanoAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/PlatanoAnim.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="PlatanoConv" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </character>
+  <scene id="main" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
+      <asset type="background" uri="assets/background/fondo02.jpg" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="CuboOrganico" x="74" y="350" scale="0.4" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="232" y="353" scale="0.4" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="550" y="362" scale="0.4" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="395" y="351" scale="0.4" layer="0" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Brujilda" x="103" y="194" scale="0.1" orientation="2" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="Platano" x="150" y="354" scale="0.1" orientation="2" layer="6" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="MesaBajo" x="313" y="417" scale="1" layer="5" />
+    </atrezzo>
   </scene>
+  <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cubo marron.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="CuboEnvases" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cubo amarillo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="CuboVidrio" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cubo verde.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="CuboPapel" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/cubo azul.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="platano" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/banana.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <drag-to idTarget="CuboEnvases" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </drag-to>
+      <drag-to idTarget="CuboOrganico" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <remove-element idTarget="platano" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Muy bien! El plátano es orgánico y por tanto va al contenedor marrón.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </drag-to>
+      <drag-to idTarget="CuboVidrio" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </drag-to>
+      <drag-to idTarget="CuboPapel" needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </drag-to>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no" />
+    </actions>
+  </object>
+  <atrezzoobject id="MesaBajo">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/mesaBajo.jpg" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <graph-conversation id="PlatanoConv">
+    <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
+      <speak-player>Contenedor marrón</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor amarillo</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>Contenedor verde</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>Contenedor azul</speak-player>
+      <condition />
+      <child nodeindex="2" />
+    </option-node>
+    <dialogue-node nodeindex="1" editor-x="417" editor-y="36">
+      <end-conversation>
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <activate flag="Platano" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Muy bien!</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="422" editor-y="234">
+      <end-conversation>
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Te has equivocado!</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
 </eAdventure>
