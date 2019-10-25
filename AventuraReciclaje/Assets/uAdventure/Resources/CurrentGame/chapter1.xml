@@ -111,7 +111,221 @@
       </examine>
     </actions>
   </character>
-  <scene id="main" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <character id="Reciclilla">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <inactive flag="inicio tutorial" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="ReciclillaCon1" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <active flag="ConvReciclilla1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Tutorial1" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Esqueletillo">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="standright" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ReciclillaCon2" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="ReciclillaEsc2">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ReciclillaCon2" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <scene id="Introduccion" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/Introduccion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="29" y="443" width="194" height="206" hasInfluenceArea="no" idTarget="CasaEsqueletillo" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <active flag="ConvReciclilla1" />
+        </condition>
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Reciclilla" x="491" y="770" scale="0.1619087" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="CasaEsqueletillo" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo 07.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="1118" y="45" width="130" height="103" hasInfluenceArea="no" idTarget="Tutorial" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <active flag="Introducción" />
+        </condition>
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Esqueletillo" x="1055" y="631" scale="0.4483828" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaEsc2" x="788" y="629" scale="0.142644" orientation="2" layer="1" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="FinIntroduccionButton" x="1181" y="155" scale="0.06693239" layer="0" />
+    </atrezzo>
+  </scene>
+  <scene id="Tutorial" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo03.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="no" x="63" y="244" width="169" height="124" hasInfluenceArea="no" idTarget="main" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <point x="63" y="331" />
+        <point x="75" y="264" />
+        <point x="112" y="244" />
+        <point x="177" y="247" />
+        <point x="207" y="256" />
+        <point x="232" y="336" />
+        <point x="179" y="364" />
+        <point x="122" y="368" />
+        <condition>
+          <active flag="Fin tutorial" />
+        </condition>
+      </exit>
+    </exits>
+    <objects>
+      <object-ref idTarget="CuboOrganico" x="277" y="245" scale="0.1871952" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="347" y="247" scale="0.1875372" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="419" y="251" scale="0.1939021" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="502" y="246" scale="0.1991479" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Reciclilla" x="521" y="580" scale="0.1441935" orientation="2" layer="6" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="425" y="147" scale="0.06168425" orientation="2" layer="1" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="Pantalla" x="393" y="558" scale="0.3810724" layer="0" />
+    </atrezzo>
+  </scene>
+  <scene id="main" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -263,6 +477,34 @@
       </detailed>
     </description>
   </atrezzoobject>
+  <atrezzoobject id="FinIntroduccionButton">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/5a1cb7cd530654.7827128715118315013401.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="Pantalla">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/kisspng-projection-screens-multimedia-projectors-computer-5af37cc8989cd4.9531311515259066326251.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
   <graph-conversation id="PlatanoConv">
     <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
       <speak-player>Contenedor marrón</speak-player>
@@ -300,6 +542,165 @@
           <speak-char idTarget="Brujilda">¡Te has equivocado!</speak-char>
           <condition />
           <deactivate flag="MuestraBrujilda" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ReciclillaCon2">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="ReciclillaEsc2">#! Hola Esqueletillo. Ya estamos listos para ir a la fiesta</speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="103" editor-y="294">
+      <speak-char idTarget="Esqueletillo">Hola chicos...yo no puedo salir de casa</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo">El camino hasta el cementerio está lleno de basura</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo"> Si mi madre se entera de que he pisado alguno...</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaEsc2">Hum...que mala pata</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo">Dice que mis huesos son de fácil contaminación</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaEsc2">¿Que te parece si nosotros recogemos la basura que nos encontremos y así no tienes ningún peligro?</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo">¿En serio me ayudaríais?</speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <option-node nodeindex="2" preListening="yes" editor-x="369" editor-y="43" x="369" y="43">
+      <speak-player>Claro que sí</speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>Que remedio...</speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="3" editor-x="670" editor-y="41">
+      <speak-char idTarget="Esqueletillo">¡GENIAL!</speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="412" editor-y="333">
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="5" editor-x="714" editor-y="290">
+      <speak-char idTarget="Esqueletillo">Muchisimas gracias chicos, sois los mejores</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo">Pero esperad...hoy es Halloween, eso significa que la burja Brujilda estará por aquí</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaEsc2">Hum... a Brujilda no le gusta que se tiren las cosas en los cubos equivocados</speak-char>
+      <condition />
+      <speak-char idTarget="Esqueletillo">Si la bruja le dice a mi madre que no hemos tirado la basura en su contenedor me castigará sin ir</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaEsc2">Entonces tenemos que tirar las cosas a su contenedor para poder ir todos a la fiesta</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaEsc2">Vamos chicos</speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="Introducción" />
+          <condition />
+          <activate flag="inicio tutorial" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ReciclillaCon1">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Reciclilla">Por fin ha llegado la fiesta de Halloween</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Dicen que van a montar una gran fiesta en el cementerio</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">¿Que te parece si vamos a por Esqueletillo y vamos a la fiesta?</speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" preListening="yes" editor-x="285" editor-y="50" x="285" y="50">
+      <speak-player>Suena genial</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>¿En el cementerio? Que miedo...</speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="505" editor-y="50">
+      <speak-char idTarget="Reciclilla">Así me gusta</speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="505" editor-y="244">
+      <speak-char idTarget="Reciclilla">Tranquilo, si vamos a estar con mucha gente, no pasará nada</speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="775" editor-y="157">
+      <speak-char idTarget="Reciclilla">Vamos a por Esqueletillo</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Mira, su casa se ve desde aquí</speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="ConvReciclilla1" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Tutorial1">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Reciclilla">Voy a explicarte como funciona esto del reciclaje</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Atento al proyector</speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="285" editor-y="50">
+      <speak-char idTarget="Reciclilla">El contenedor marrón es para tirar restos de comida y eso</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">El contenedor amarillo es para los plásticos</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">El contenedor azul es para tirar papeles o cartones</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Y el contenedor verde es para cristales</speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="520" editor-y="50">
+      <speak-char idTarget="Reciclilla">Para tirar algo solo tienes que seleccionarlo con el botón derecho de tu ratón y seleccionar el cubo al que lo quieres tirar</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Pero cuidado, si intentas tirar algo al cubo que no es la bruja Brujilda se cabreará</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Si se cabrea mucho podría ir a contarselo a la madre de Esqueletillo y no le dejaría salir ni en mil años</speak-char>
+      <condition />
+      <child nodeindex="3" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="35" editor-y="361">
+      <speak-char idTarget="Reciclilla">¿Lo has entendido?</speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <option-node nodeindex="4" preListening="yes" editor-x="259" editor-y="366" x="259" y="366">
+      <speak-player>Sí</speak-player>
+      <condition />
+      <child nodeindex="5" />
+      <speak-player>No del todo...</speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </option-node>
+    <dialogue-node nodeindex="5" editor-x="550" editor-y="355">
+      <speak-char idTarget="Reciclilla">Genial</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Manos a la obra</speak-char>
+      <condition />
+      <speak-char idTarget="Reciclilla">Dale a la calabaza para empezar</speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <activate flag="Fin tutorial" />
           <condition />
         </effect>
       </end-conversation>
