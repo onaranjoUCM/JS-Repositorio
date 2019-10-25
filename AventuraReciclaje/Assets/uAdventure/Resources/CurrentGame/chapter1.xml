@@ -985,7 +985,7 @@
         <effect>
           <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
           <condition>
-            <equals var="ItemsPicked" value="5" />
+            <equals var="ItemsPicked" value="10" />
           </condition>
         </effect>
       </end-conversation>
@@ -1042,7 +1042,7 @@
         <effect>
           <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
           <condition>
-            <equals var="ItemsPicked" value="5" />
+            <equals var="ItemsPicked" value="10" />
           </condition>
         </effect>
       </end-conversation>
@@ -1099,7 +1099,7 @@
         <effect>
           <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
           <condition>
-            <equals var="ItemsPicked" value="5" />
+            <equals var="ItemsPicked" value="10" />
           </condition>
         </effect>
       </end-conversation>
@@ -1156,7 +1156,7 @@
         <effect>
           <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
           <condition>
-            <equals var="ItemsPicked" value="5" />
+            <equals var="ItemsPicked" value="10" />
           </condition>
         </effect>
       </end-conversation>
