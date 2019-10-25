@@ -69,48 +69,6 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
     </actions>
   </character>
-  <character id="Platano">
-    <resources name="No name">
-      <condition>
-        <inactive flag="Platano" />
-      </condition>
-      <asset type="standup" uri="assets/animation/PlatanoAnim.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/PlatanoAnim.eaa.xml" />
-      <asset type="standright" uri="assets/animation/PlatanoAnim.eaa.xml" />
-      <asset type="standleft" uri="assets/animation/PlatanoAnim.eaa.xml" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-    <actions>
-      <examine needsGoTo="no" keepDistance="0" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="PlatanoConv" />
-          <condition />
-        </effect>
-      </examine>
-    </actions>
-  </character>
   <character id="Reciclilla">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
@@ -296,7 +254,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="no" x="63" y="244" width="169" height="124" hasInfluenceArea="no" idTarget="main" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="63" y="244" width="169" height="124" hasInfluenceArea="no" idTarget="main1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <point x="63" y="331" />
         <point x="75" y="264" />
@@ -325,28 +283,54 @@
       <atrezzo-ref idTarget="Pantalla" x="393" y="558" scale="0.3810724" layer="0" />
     </atrezzo>
   </scene>
-  <scene id="main" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="main1" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo02.jpg" />
+      <asset type="background" uri="assets/background/fondo05.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="CuboOrganico" x="74" y="350" scale="0.4" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboEnvases" x="232" y="353" scale="0.4" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboVidrio" x="550" y="362" scale="0.4" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboPapel" x="395" y="351" scale="0.4" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboOrganico" x="702" y="443" scale="0.25" layer="13" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="794" y="445" scale="0.25" layer="12" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="971" y="451" scale="0.25" layer="11" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="886" y="444" scale="0.25" layer="10" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="315" y="349" scale="0.1" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="cerveza" x="66" y="598" scale="0.1" layer="9" hasInfluenceArea="no" />
+      <object-ref idTarget="botella1" x="520" y="338" scale="0.1" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="bolsas" x="926" y="584" scale="0.1" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="lata" x="281" y="427" scale="0.05" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="cereales" x="416" y="505" scale="0.15" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="manzana" x="707" y="577" scale="0.2" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="bolsa1" x="829" y="197" scale="0.15" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="revista" x="591" y="473" scale="0.07" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="regalo" x="233" y="546" scale="0.15" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Brujilda" x="103" y="194" scale="0.1" orientation="2" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="Platano" x="150" y="354" scale="0.1" orientation="2" layer="6" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="175" y="240" scale="0.1" orientation="2" layer="14" hasInfluenceArea="no" />
     </characters>
-    <atrezzo>
-      <atrezzo-ref idTarget="MesaBajo" x="313" y="417" scale="1" layer="5" />
-    </atrezzo>
+  </scene>
+  <scene id="main2" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo04.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="CuboOrganico" x="652" y="766" scale="0.25" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="742" y="768" scale="0.25" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="915" y="774" scale="0.25" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="831" y="767" scale="0.25" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="169" y="511" scale="0.1" layer="5" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Brujilda" x="191" y="309" scale="0.1438849" orientation="2" layer="4" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -418,49 +402,494 @@
       </detailed>
     </description>
     <actions>
-      <drag-to idTarget="CuboEnvases" needsGoTo="no" keepDistance="0" not-effects="no">
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
-          <activate flag="MuestraBrujilda" />
-          <condition />
-          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
-          <condition />
-          <deactivate flag="MuestraBrujilda" />
-          <condition />
-        </effect>
-      </drag-to>
-      <drag-to idTarget="CuboOrganico" needsGoTo="no" keepDistance="0" not-effects="no">
-        <effect>
-          <activate flag="MuestraBrujilda" />
+          <trigger-conversation idTarget="ConvMarron1" />
           <condition />
           <remove-element idTarget="platano" />
           <condition />
-          <speak-char idTarget="Brujilda">¡Muy bien! El plátano es orgánico y por tanto va al contenedor marrón.</speak-char>
-          <condition />
-          <deactivate flag="MuestraBrujilda" />
-          <condition />
         </effect>
-      </drag-to>
-      <drag-to idTarget="CuboVidrio" needsGoTo="no" keepDistance="0" not-effects="no">
+      </examine>
+    </actions>
+  </object>
+  <object id="cerveza" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/beer01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
-          <activate flag="MuestraBrujilda" />
+          <trigger-conversation idTarget="ConvVerde1" />
           <condition />
-          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
-          <condition />
-          <deactivate flag="MuestraBrujilda" />
+          <remove-element idTarget="cerveza" />
           <condition />
         </effect>
-      </drag-to>
-      <drag-to idTarget="CuboPapel" needsGoTo="no" keepDistance="0" not-effects="no">
+      </examine>
+    </actions>
+  </object>
+  <object id="bolsa1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/bolsa01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
-          <activate flag="MuestraBrujilda" />
+          <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
-          <speak-char idTarget="Brujilda">¡Te has equivocado! Prueba otra vez.</speak-char>
-          <condition />
-          <deactivate flag="MuestraBrujilda" />
+          <remove-element idTarget="bolsa1" />
           <condition />
         </effect>
-      </drag-to>
-      <use needsGoTo="yes" keepDistance="35" not-effects="no" />
+      </examine>
+    </actions>
+  </object>
+  <object id="bolsa2" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/bolsa02.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="bolsa2" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="bolsas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/bolsas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="bolsas" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botella1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botella01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvVerde1" />
+          <condition />
+          <remove-element idTarget="botella1" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="botella2" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/botella03.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="botella2" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="cereales" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/caja cereales.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="cereales" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="caja1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/caja.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="caja1" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="caja2" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/caja01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="caja2" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="cafe" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/coffe.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="cafe" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="corcho" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/corcho01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="corcho" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="lata" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/lata1.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="lata" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="latas" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/latas.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="latas" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="leche" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/leche.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAmarillo1" />
+          <condition />
+          <remove-element idTarget="leche" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="manzana" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/manzana01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvMarron1" />
+          <condition />
+          <remove-element idTarget="manzana" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="periodico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/periodico.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="periodico" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="pielPlatano" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/piel platano.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvMarron1" />
+          <condition />
+          <remove-element idTarget="pielPlatano" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="regalo" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/papel_regalo.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="regalo" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="revista" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/revista.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvAzul1" />
+          <condition />
+          <remove-element idTarget="revista" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="vino" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/vino01.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="ConvVerde1" />
+          <condition />
+          <remove-element idTarget="vino" />
+          <condition />
+        </effect>
+      </examine>
     </actions>
   </object>
   <atrezzoobject id="MesaBajo">
@@ -505,7 +934,7 @@
       </detailed>
     </description>
   </atrezzoobject>
-  <graph-conversation id="PlatanoConv">
+  <graph-conversation id="ConvMarron1">
     <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
       <speak-player>Contenedor marrón</speak-player>
       <condition />
@@ -521,28 +950,214 @@
       <child nodeindex="2" />
     </option-node>
     <dialogue-node nodeindex="1" editor-x="417" editor-y="36">
-      <end-conversation>
-        <effect>
-          <activate flag="MuestraBrujilda" />
-          <condition />
-          <activate flag="Platano" />
-          <condition />
-          <speak-char idTarget="Brujilda">¡Muy bien!</speak-char>
-          <condition />
-          <deactivate flag="MuestraBrujilda" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <child nodeindex="3" />
+      <effect>
+        <activate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="Puntos" value="100" />
+        <condition />
+        <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
+        <condition />
+        <deactivate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="ItemsPicked" value="1" />
+        <condition />
+      </effect>
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="422" editor-y="234">
       <end-conversation>
         <effect>
           <activate flag="MuestraBrujilda" />
           <condition />
-          <speak-char idTarget="Brujilda">¡Te has equivocado!</speak-char>
+          <speak-char idTarget="Brujilda">¡Eso no va ahí!</speak-char>
+          <condition />
+          <speak-char idTarget="Brujilda">Inténtalo de nuevo.</speak-char>
           <condition />
           <deactivate flag="MuestraBrujilda" />
           <condition />
+          <decrement var="Puntos" value="50" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <condition>
+            <equals var="ItemsPicked" value="5" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConvAmarillo1">
+    <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
+      <speak-player>Contenedor marrón</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor amarillo</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>Contenedor verde</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor azul</speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </option-node>
+    <dialogue-node nodeindex="1" editor-x="422" editor-y="234">
+      <end-conversation>
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Eso no va ahí!</speak-char>
+          <condition />
+          <speak-char idTarget="Brujilda">Inténtalo de nuevo.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+          <decrement var="Puntos" value="50" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="417" editor-y="36">
+      <child nodeindex="3" />
+      <effect>
+        <activate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="Puntos" value="100" />
+        <condition />
+        <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
+        <condition />
+        <deactivate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="ItemsPicked" value="1" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <condition>
+            <equals var="ItemsPicked" value="5" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConvVerde1">
+    <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
+      <speak-player>Contenedor marrón</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor amarillo</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor verde</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>Contenedor azul</speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </option-node>
+    <dialogue-node nodeindex="1" editor-x="422" editor-y="234">
+      <end-conversation>
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Eso no va ahí!</speak-char>
+          <condition />
+          <speak-char idTarget="Brujilda">Inténtalo de nuevo.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+          <decrement var="Puntos" value="50" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="417" editor-y="36">
+      <child nodeindex="3" />
+      <effect>
+        <activate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="Puntos" value="100" />
+        <condition />
+        <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
+        <condition />
+        <deactivate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="ItemsPicked" value="1" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <condition>
+            <equals var="ItemsPicked" value="5" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConvAzul1">
+    <option-node nodeindex="0" preListening="yes" editor-x="50" editor-y="50" x="50" y="50">
+      <speak-player>Contenedor marrón</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor amarillo</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor verde</speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <speak-player>Contenedor azul</speak-player>
+      <condition />
+      <child nodeindex="2" />
+    </option-node>
+    <dialogue-node nodeindex="1" editor-x="422" editor-y="234">
+      <end-conversation>
+        <effect>
+          <activate flag="MuestraBrujilda" />
+          <condition />
+          <speak-char idTarget="Brujilda">¡Eso no va ahí!</speak-char>
+          <condition />
+          <speak-char idTarget="Brujilda">Inténtalo de nuevo.</speak-char>
+          <condition />
+          <deactivate flag="MuestraBrujilda" />
+          <condition />
+          <decrement var="Puntos" value="50" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="367" editor-y="31">
+      <child nodeindex="3" />
+      <effect>
+        <activate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="Puntos" value="100" />
+        <condition />
+        <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
+        <condition />
+        <deactivate flag="MuestraBrujilda" />
+        <condition />
+        <increment var="ItemsPicked" value="1" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="599" editor-y="33">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <condition>
+            <equals var="ItemsPicked" value="5" />
+          </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -691,7 +1306,7 @@
       <condition />
       <child nodeindex="1" />
     </option-node>
-    <dialogue-node nodeindex="5" editor-x="550" editor-y="355">
+    <dialogue-node nodeindex="5" editor-x="555" editor-y="372">
       <speak-char idTarget="Reciclilla">Genial</speak-char>
       <condition />
       <speak-char idTarget="Reciclilla">Manos a la obra</speak-char>
