@@ -198,7 +198,27 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Introduccion" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo ini2.png" />
+      <asset type="bgmusic" uri="assets/audio/angry-halloween.mp3" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="no" x="118" y="750" width="533" height="313" hasInfluenceArea="no" idTarget="Introduccion" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <point x="251" y="750" />
+        <point x="531" y="750" />
+        <point x="651" y="1063" />
+        <point x="118" y="1054" />
+      </exit>
+    </exits>
+  </scene>
+  <scene id="Introduccion" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -297,19 +317,19 @@
       <object-ref idTarget="CuboEnvases" x="794" y="445" scale="0.25" layer="12" hasInfluenceArea="no" />
       <object-ref idTarget="CuboVidrio" x="971" y="451" scale="0.25" layer="11" hasInfluenceArea="no" />
       <object-ref idTarget="CuboPapel" x="886" y="444" scale="0.25" layer="10" hasInfluenceArea="no" />
-      <object-ref idTarget="platano" x="315" y="349" scale="0.1" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="cerveza" x="66" y="598" scale="0.1" layer="9" hasInfluenceArea="no" />
-      <object-ref idTarget="botella1" x="520" y="338" scale="0.1" layer="8" hasInfluenceArea="no" />
-      <object-ref idTarget="bolsas" x="926" y="584" scale="0.1" layer="7" hasInfluenceArea="no" />
-      <object-ref idTarget="lata" x="281" y="427" scale="0.05" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="cereales" x="416" y="505" scale="0.15" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="manzana" x="707" y="577" scale="0.2" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="118" y="463" scale="0.08682162" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="cerveza" x="51" y="586" scale="0.08355869" layer="9" hasInfluenceArea="no" />
+      <object-ref idTarget="botella1" x="440" y="476" scale="0.233479" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="bolsas" x="724" y="609" scale="0.1492168" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="lata" x="239" y="476" scale="0.0790066" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="cereales" x="344" y="568" scale="0.1650249" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="manzana" x="561" y="495" scale="0.1760408" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="bolsa1" x="829" y="197" scale="0.15" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="revista" x="591" y="473" scale="0.07" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="regalo" x="233" y="546" scale="0.15" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="revista" x="492" y="583" scale="0.08351044" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="regalo" x="177" y="595" scale="0.203952" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Brujilda" x="175" y="240" scale="0.1" orientation="2" layer="14" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="186" y="265" scale="0.1129539" orientation="2" layer="14" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="main2" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
