@@ -198,6 +198,45 @@
       </talk-to>
     </actions>
   </character>
+  <character id="ReciclillaAyuda">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="AyudaJugador" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
   <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -323,13 +362,14 @@
       <object-ref idTarget="bolsas" x="724" y="609" scale="0.1492168" layer="7" hasInfluenceArea="no" />
       <object-ref idTarget="lata" x="239" y="476" scale="0.0790066" layer="6" hasInfluenceArea="no" />
       <object-ref idTarget="cereales" x="344" y="568" scale="0.1650249" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="manzana" x="561" y="495" scale="0.1760408" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="manzana" x="575" y="507" scale="0.1760408" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="bolsa1" x="829" y="197" scale="0.15" layer="1" hasInfluenceArea="no" />
       <object-ref idTarget="revista" x="492" y="583" scale="0.08351044" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="regalo" x="177" y="595" scale="0.203952" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Brujilda" x="186" y="265" scale="0.1129539" orientation="2" layer="14" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaAyuda" x="539" y="422" scale="0.1302572" orientation="2" layer="15" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="main2" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -1340,5 +1380,51 @@
         </effect>
       </end-conversation>
     </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="AyudaJugador">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="ReciclillaAyuda">¿Necesitas ayuda?</speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" preListening="yes" editor-x="41" editor-y="271" x="41" y="271">
+      <speak-player>Si por favor, quisiera que me repitieras las reglas</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>No te preocupes, puedo hacerlo de memoria</speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="331" editor-y="44">
+      <speak-char idTarget="ReciclillaAyuda">El contenedor marrón es para tirar restos de comida y eso</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaAyuda">El contenedor amarillo es para los plásticos</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaAyuda">El contenedor azul es para tirar papeles o cartones</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaAyuda">Y el contenedor verde es para cristales</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaAyuda">Recuerda que si Brujilda se cabrea demasiado se lo dirá a la madre de Esqueletillo y no podrá venir con nosotros</speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="354" editor-y="390">
+      <speak-char idTarget="ReciclillaAyuda">¡Genial, de vuelta al trabajo!</speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="703" editor-y="62">
+      <speak-char idTarget="ReciclillaAyuda">¿Quieres que lo repita?</speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <option-node nodeindex="5" preListening="yes" editor-x="685" editor-y="323" x="685" y="323">
+      <speak-player>Si por favor, no he pillado algo</speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>Ahora puedo volver a ayudar a Esquelitillo</speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
   </graph-conversation>
 </eAdventure>
