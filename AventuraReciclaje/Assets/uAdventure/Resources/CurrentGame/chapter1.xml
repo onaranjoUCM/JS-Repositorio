@@ -361,29 +361,29 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo 07.jpg" />
+      <asset type="background" uri="assets/background/fondo004.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="no" x="1118" y="45" width="130" height="103" hasInfluenceArea="no" idTarget="Tutorial" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="1746" y="70" width="204" height="161" hasInfluenceArea="no" idTarget="Tutorial" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
-        <point x="1118" y="45" />
-        <point x="1248" y="45" />
-        <point x="1248" y="148" />
-        <point x="1118" y="148" />
+        <point x="1746" y="70" />
+        <point x="1950" y="70" />
+        <point x="1950" y="231" />
+        <point x="1746" y="231" />
         <condition>
           <active flag="Introducción" />
         </condition>
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Esqueletillo" x="1102" y="675" scale="0.4483828" orientation="2" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaEsc2" x="803" y="657" scale="0.142644" orientation="1" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Esqueletillo" x="1720" y="1053" scale="0.7005981" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaEsc2" x="1253" y="1042" scale="0.2228813" orientation="1" layer="1" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="FinIntroduccionButton" x="1181" y="155" scale="0.06693239" layer="0" />
+      <atrezzo-ref idTarget="FinIntroduccionButton" x="1843" y="240" scale="0.1045819" layer="0" />
     </atrezzo>
   </scene>
   <scene id="Tutorial" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -500,14 +500,14 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo05.png" />
+      <asset type="background" uri="assets/background/fondo003.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="EsqueletilloFinal" x="481" y="544" scale="0.4258832" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaFinal" x="771" y="540" scale="0.1478956" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1130" scale="0.5234323" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1119" scale="0.1809286" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
