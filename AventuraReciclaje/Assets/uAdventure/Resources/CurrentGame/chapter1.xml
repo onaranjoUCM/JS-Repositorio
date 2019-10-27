@@ -454,7 +454,7 @@
       <object-ref idTarget="bolsa1" x="829" y="197" scale="0.15" layer="1" hasInfluenceArea="no" />
       <object-ref idTarget="revista" x="492" y="583" scale="0.08351044" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="regalo" x="177" y="595" scale="0.203952" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="flecha" x="826" y="103" scale="0.1443695" layer="16" hasInfluenceArea="no" />
+      <object-ref idTarget="flecha" x="960" y="97" scale="0.1443695" layer="16" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Brujilda" x="186" y="265" scale="0.1129539" orientation="2" layer="14" hasInfluenceArea="no" />
@@ -489,7 +489,7 @@
       <object-ref idTarget="leche" x="52" y="652" scale="0.2320583" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="revista" x="172" y="758" scale="0.1201055" layer="2" hasInfluenceArea="no" />
       <object-ref idTarget="pielPlatano" x="244" y="643" scale="0.09804159" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="flecha" x="766" y="105" scale="0.1533733" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="flecha" x="896" y="101" scale="0.1533733" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Brujilda" x="168" y="290" scale="0.1438849" orientation="2" layer="14" hasInfluenceArea="no" />
@@ -912,7 +912,7 @@
     <actions>
       <examine needsGoTo="no" keepDistance="0" not-effects="no">
         <effect>
-          <trigger-conversation idTarget="ConvAzul1" />
+          <trigger-conversation idTarget="ConvMarron1" />
           <condition />
           <remove-element idTarget="corcho" />
           <condition>
@@ -1210,20 +1210,6 @@
       </detailed>
     </description>
   </object>
-  <atrezzoobject id="MesaBajo">
-    <resources name="No name">
-      <asset type="image" uri="assets/image/mesaBajo.jpg" />
-      <asset type="icon" uri="assets/special/EmptyIcon.png" />
-    </resources>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-  </atrezzoobject>
   <atrezzoobject id="FinIntroduccionButton">
     <resources name="No name">
       <asset type="image" uri="assets/image/5a1cb7cd530654.7827128715118315013401.png" />
@@ -1272,8 +1258,6 @@
       <effect>
         <activate flag="MuestraBrujilda" />
         <condition />
-        <increment var="Puntos" value="100" />
-        <condition />
         <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
         <condition />
         <deactivate flag="MuestraBrujilda" />
@@ -1295,6 +1279,8 @@
           <condition />
           <deactivate flag="MuestraBrujilda" />
           <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#FF0000FF" uri="">-50 Puntos</show-text>
+          <condition />
           <decrement var="Puntos" value="50" />
           <condition />
         </effect>
@@ -1307,6 +1293,10 @@
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#00FF00FF" uri="">+ 100 Puntos</show-text>
+          <condition />
+          <increment var="Puntos" value="100" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1337,6 +1327,8 @@
           <condition />
           <deactivate flag="MuestraBrujilda" />
           <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#FF0000FF" uri="">-50 Puntos</show-text>
+          <condition />
           <decrement var="Puntos" value="50" />
           <condition />
         </effect>
@@ -1346,8 +1338,6 @@
       <child nodeindex="3" />
       <effect>
         <activate flag="MuestraBrujilda" />
-        <condition />
-        <increment var="Puntos" value="100" />
         <condition />
         <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
         <condition />
@@ -1366,6 +1356,10 @@
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#00FF00FF" uri="">+100 Puntos</show-text>
+          <condition />
+          <increment var="Puntos" value="100" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1396,6 +1390,8 @@
           <condition />
           <deactivate flag="MuestraBrujilda" />
           <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#FF0000FF" uri="">-50 Puntos</show-text>
+          <condition />
           <decrement var="Puntos" value="50" />
           <condition />
         </effect>
@@ -1405,8 +1401,6 @@
       <child nodeindex="3" />
       <effect>
         <activate flag="MuestraBrujilda" />
-        <condition />
-        <increment var="Puntos" value="100" />
         <condition />
         <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
         <condition />
@@ -1425,6 +1419,10 @@
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#00FF00FF" uri="">+100 Puntos</show-text>
+          <condition />
+          <increment var="Puntos" value="100" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1455,6 +1453,8 @@
           <condition />
           <deactivate flag="MuestraBrujilda" />
           <condition />
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#FF0000FF" uri="">-50 Puntos</show-text>
+          <condition />
           <decrement var="Puntos" value="50" />
           <condition />
         </effect>
@@ -1464,8 +1464,6 @@
       <child nodeindex="3" />
       <effect>
         <activate flag="MuestraBrujilda" />
-        <condition />
-        <increment var="Puntos" value="100" />
         <condition />
         <speak-char idTarget="Brujilda">¡Bien hecho!</speak-char>
         <condition />
@@ -1484,6 +1482,10 @@
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#00FF00FF" uri="">+100 Puntos</show-text>
+          <condition />
+          <increment var="Puntos" value="100" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1693,13 +1695,21 @@
   </graph-conversation>
   <graph-conversation id="FinJuego">
     <dialogue-node nodeindex="0" editor-x="130" editor-y="64">
-      <speak-char idTarget="ReciclillaFinal">¡Lo logramos! Gracias a ti Esqueletillo ha podido venir con nosotros a la fiesta</speak-char>
+      <speak-char idTarget="ReciclillaFinal">¡Lo logramos! Gracias a ti Esqueletillo ha podido venir con nosotros a la fiesta.</speak-char>
       <condition />
-      <speak-char idTarget="EsqueletilloFinal">Te estoy muy agradecido. Si tan solo mi padre estuviera muerto para venir con nosotros...</speak-char>
+      <speak-char idTarget="Reciclilla">Lo has hecho muy bien, se nota que has aprendido mucho sobre el reciclaje.</speak-char>
+      <condition>
+        <greater-than var="Puntos" value="0" />
+      </condition>
+      <speak-char idTarget="Reciclilla">Pero parece que te ha costado un poco, seguro que la próxima vez te sale mejor.</speak-char>
+      <condition>
+        <less-equals-than var="Puntos" value="0" />
+      </condition>
+      <speak-char idTarget="EsqueletilloFinal">Te estoy muy agradecido. Si no fuera por tí, me habría tenido que quedar en casa mientras los demás se divertían.</speak-char>
       <condition />
-      <speak-char idTarget="ReciclillaFinal">Estoy segura que tu padre te extraña y recuerda siempre, Esqueletillo</speak-char>
+      <speak-char idTarget="ReciclillaFinal">Recuerda siempre reciclar cada tipo de basura en su contenedor. ¡Hay que pensar en el medio ambiente!</speak-char>
       <condition />
-      <speak-char idTarget="ReciclillaFinal">La moral de la historia es: se consciente de tu basura, ayuda a reciclar, y así Esqueletillo no vera a su padre en un buen tiempo</speak-char>
+      <speak-char idTarget="ReciclillaFinal">¡Y ahora no esperemos mas Esqueletillo, vamos a la fiesta!</speak-char>
       <condition />
       <speak-char idTarget="ReciclillaFinal">¡Feliz dia de los muertos!</speak-char>
       <condition />
