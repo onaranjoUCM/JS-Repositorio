@@ -316,7 +316,7 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Inicio" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -492,7 +492,7 @@
       <character-ref idTarget="ReciclillaAyuda" x="819" y="711" scale="0.1073488" orientation="2" layer="8" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="FinJuego" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="FinJuego" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -581,7 +581,13 @@
           <trigger-conversation idTarget="ConvMarron1" />
           <condition />
           <remove-element idTarget="platano" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -605,7 +611,13 @@
           <trigger-conversation idTarget="ConvVerde1" />
           <condition />
           <remove-element idTarget="cerveza" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -629,7 +641,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="bolsa1" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -653,7 +671,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="bolsa2" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -677,7 +701,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="bolsas" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -701,7 +731,13 @@
           <trigger-conversation idTarget="ConvVerde1" />
           <condition />
           <remove-element idTarget="botella1" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -725,7 +761,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="botella2" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -749,7 +791,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="cereales" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -773,7 +821,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="caja1" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -797,7 +851,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="caja2" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -821,7 +881,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="cafe" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -845,7 +911,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="corcho" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -869,7 +941,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="lata" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -893,7 +971,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="latas" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -917,7 +1001,13 @@
           <trigger-conversation idTarget="ConvAmarillo1" />
           <condition />
           <remove-element idTarget="leche" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -941,7 +1031,13 @@
           <trigger-conversation idTarget="ConvMarron1" />
           <condition />
           <remove-element idTarget="manzana" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -965,7 +1061,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="periodico" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -989,7 +1091,13 @@
           <trigger-conversation idTarget="ConvMarron1" />
           <condition />
           <remove-element idTarget="pielPlatano" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -1013,7 +1121,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="regalo" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -1037,7 +1151,13 @@
           <trigger-conversation idTarget="ConvAzul1" />
           <condition />
           <remove-element idTarget="revista" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -1061,7 +1181,13 @@
           <trigger-conversation idTarget="ConvVerde1" />
           <condition />
           <remove-element idTarget="vino" />
-          <condition />
+          <condition>
+            <active flag="Remove" />
+          </condition>
+          <deactivate flag="Remove" />
+          <condition>
+            <active flag="Remove" />
+          </condition>
         </effect>
       </examine>
     </actions>
@@ -1150,6 +1276,8 @@
         <condition />
         <increment var="ItemsPicked" value="1" />
         <condition />
+        <activate flag="Remove" />
+        <condition />
       </effect>
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="422" editor-y="234">
@@ -1171,7 +1299,7 @@
     <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="3" />
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
@@ -1222,6 +1350,8 @@
         <deactivate flag="MuestraBrujilda" />
         <condition />
         <increment var="ItemsPicked" value="1" />
+        <condition />
+        <activate flag="Remove" />
         <condition />
       </effect>
     </dialogue-node>
@@ -1280,6 +1410,8 @@
         <condition />
         <increment var="ItemsPicked" value="1" />
         <condition />
+        <activate flag="Remove" />
+        <condition />
       </effect>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
@@ -1336,6 +1468,8 @@
         <deactivate flag="MuestraBrujilda" />
         <condition />
         <increment var="ItemsPicked" value="1" />
+        <condition />
+        <activate flag="Remove" />
         <condition />
       </effect>
     </dialogue-node>
