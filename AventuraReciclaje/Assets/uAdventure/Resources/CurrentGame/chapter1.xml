@@ -164,7 +164,7 @@
     <resources name="No name">
       <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
       <asset type="standdown" uri="assets/animation/ReciclillaAnim.eaa.xml" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/animation/der.eaa.xml" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
       <asset type="speakdown" uri="assets/special/EmptyAnimation" />
@@ -354,32 +354,36 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Reciclilla" x="491" y="770" scale="0.1619087" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Reciclilla" x="459" y="713" scale="0.1619087" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="CasaEsqueletillo" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo 07.jpg" />
+      <asset type="background" uri="assets/background/fondo004.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="1118" y="45" width="130" height="103" hasInfluenceArea="no" idTarget="Tutorial" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="1746" y="70" width="204" height="161" hasInfluenceArea="no" idTarget="Tutorial" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <point x="1746" y="70" />
+        <point x="1950" y="70" />
+        <point x="1950" y="231" />
+        <point x="1746" y="231" />
         <condition>
           <active flag="Introducción" />
         </condition>
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Esqueletillo" x="1055" y="631" scale="0.4483828" orientation="2" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaEsc2" x="788" y="629" scale="0.142644" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Esqueletillo" x="1720" y="1053" scale="0.7005981" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaEsc2" x="1253" y="1042" scale="0.2228813" orientation="1" layer="1" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="FinIntroduccionButton" x="1181" y="155" scale="0.06693239" layer="0" />
+      <atrezzo-ref idTarget="FinIntroduccionButton" x="1843" y="240" scale="0.1045819" layer="0" />
     </atrezzo>
   </scene>
   <scene id="Tutorial" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -408,10 +412,10 @@
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="CuboOrganico" x="277" y="245" scale="0.1871952" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboEnvases" x="347" y="247" scale="0.1875372" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboVidrio" x="419" y="251" scale="0.1939021" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboPapel" x="502" y="246" scale="0.1991479" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboOrganico" x="275" y="250" scale="0.1871952" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="347" y="250" scale="0.1875372" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="425" y="258" scale="0.1939021" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="501" y="252" scale="0.1942064" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Reciclilla" x="521" y="580" scale="0.1441935" orientation="2" layer="6" hasInfluenceArea="no" />
@@ -476,19 +480,19 @@
       <object-ref idTarget="CuboEnvases" x="742" y="768" scale="0.25" layer="11" hasInfluenceArea="no" />
       <object-ref idTarget="CuboVidrio" x="833" y="778" scale="0.25" layer="10" hasInfluenceArea="no" />
       <object-ref idTarget="CuboPapel" x="921" y="767" scale="0.25" layer="9" hasInfluenceArea="no" />
-      <object-ref idTarget="platano" x="153" y="627" scale="0.1" layer="15" hasInfluenceArea="no" />
-      <object-ref idTarget="cerveza" x="325" y="725" scale="0.1077995" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="botella2" x="389" y="702" scale="0.07405727" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="corcho" x="358" y="757" scale="0.153061" layer="7" hasInfluenceArea="no" />
-      <object-ref idTarget="cafe" x="632" y="652" scale="0.1671496" layer="13" hasInfluenceArea="no" />
-      <object-ref idTarget="latas" x="454" y="703" scale="0.1679927" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="159" y="631" scale="0.1" layer="15" hasInfluenceArea="no" />
+      <object-ref idTarget="cerveza" x="348" y="684" scale="0.1077995" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="botella2" x="432" y="640" scale="0.08183251" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="corcho" x="348" y="770" scale="0.153061" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="cafe" x="553" y="646" scale="0.1671496" layer="13" hasInfluenceArea="no" />
+      <object-ref idTarget="latas" x="501" y="740" scale="0.1679927" layer="4" hasInfluenceArea="no" />
       <object-ref idTarget="leche" x="52" y="652" scale="0.2320583" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="revista" x="197" y="781" scale="0.1201055" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="pielPlatano" x="230" y="644" scale="0.09804159" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="revista" x="172" y="758" scale="0.1201055" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="pielPlatano" x="244" y="643" scale="0.09804159" layer="1" hasInfluenceArea="no" />
       <object-ref idTarget="flecha" x="766" y="105" scale="0.1533733" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Brujilda" x="191" y="309" scale="0.1438849" orientation="2" layer="14" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="168" y="290" scale="0.1438849" orientation="2" layer="14" hasInfluenceArea="no" />
       <character-ref idTarget="ReciclillaAyuda" x="819" y="711" scale="0.1073488" orientation="2" layer="8" hasInfluenceArea="no" />
     </characters>
   </scene>
@@ -496,14 +500,14 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo05.png" />
+      <asset type="background" uri="assets/background/fondo003.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="EsqueletilloFinal" x="507" y="529" scale="0.4855419" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaFinal" x="782" y="503" scale="0.1478956" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1130" scale="0.5234323" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1119" scale="0.1809286" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
@@ -1486,28 +1490,28 @@
   </graph-conversation>
   <graph-conversation id="ReciclillaCon2">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="ReciclillaEsc2">#! Hola Esqueletillo. Ya estamos listos para ir a la fiesta</speak-char>
+      <speak-char idTarget="ReciclillaEsc2">Hola Esqueletillo. Ya estamos listos para ir a la fiesta</speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="103" editor-y="294">
-      <speak-char idTarget="Esqueletillo">Hola chicos...yo no puedo salir de casa</speak-char>
+      <speak-char idTarget="Esqueletillo">#O Hola chicos...yo no puedo salir de casa</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo">El camino hasta el cementerio está lleno de basura</speak-char>
+      <speak-char idTarget="Esqueletillo">#O El camino hasta el cementerio está lleno de basura</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo"> Si mi madre se entera de que he pisado alguno...</speak-char>
+      <speak-char idTarget="Esqueletillo">#O Si mi madre se entera que he pisado basura...</speak-char>
       <condition />
       <speak-char idTarget="ReciclillaEsc2">Hum...que mala pata</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo">Dice que mis huesos son de fácil contaminación</speak-char>
+      <speak-char idTarget="Esqueletillo">#O Dice que mis huesos son de fácil contaminación</speak-char>
       <condition />
-      <speak-char idTarget="ReciclillaEsc2">¿Que te parece si nosotros recogemos la basura que nos encontremos y así no tienes ningún peligro?</speak-char>
+      <speak-char idTarget="ReciclillaEsc2">¿Qué te parece si nosotros recogemos la basura que nos encontremos y así no tienes ningún peligro?</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo">¿En serio me ayudaríais?</speak-char>
+      <speak-char idTarget="Esqueletillo">#O ¿En serio me ayudaríais?</speak-char>
       <condition />
       <child nodeindex="2" />
     </dialogue-node>
-    <option-node nodeindex="2" preListening="yes" editor-x="369" editor-y="43" x="369" y="43">
+    <option-node nodeindex="2" preListening="yes" editor-x="444" editor-y="157" x="444" y="157">
       <speak-player>Claro que sí</speak-player>
       <condition />
       <child nodeindex="3" />
@@ -1515,32 +1519,30 @@
       <condition />
       <child nodeindex="4" />
     </option-node>
-    <dialogue-node nodeindex="3" editor-x="670" editor-y="41">
-      <speak-char idTarget="Esqueletillo">¡GENIAL!</speak-char>
+    <dialogue-node nodeindex="3" editor-x="730" editor-y="43">
+      <speak-char idTarget="Esqueletillo">#O ¡GENIAL!</speak-char>
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="412" editor-y="333">
+    <dialogue-node nodeindex="4" editor-x="757" editor-y="297">
       <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="5" editor-x="714" editor-y="290">
-      <speak-char idTarget="Esqueletillo">Muchisimas gracias chicos, sois los mejores</speak-char>
+    <dialogue-node nodeindex="5" editor-x="1072" editor-y="134">
+      <speak-char idTarget="Esqueletillo">#O Muchísimas gracias chicos, sois los mejores</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo">Pero esperad...hoy es Halloween, eso significa que la burja Brujilda estará por aquí</speak-char>
+      <speak-char idTarget="Esqueletillo">#O Pero esperad...hoy es Halloween, eso significa que la bruja Brujilda estará por aquí</speak-char>
       <condition />
       <speak-char idTarget="ReciclillaEsc2">Hum... a Brujilda no le gusta que se tiren las cosas en los cubos equivocados</speak-char>
       <condition />
-      <speak-char idTarget="Esqueletillo">Si la bruja le dice a mi madre que no hemos tirado la basura en su contenedor me castigará sin ir</speak-char>
+      <speak-char idTarget="Esqueletillo">#O Si la bruja le dice a mi madre que no hemos tirado la basura en su contenedor me castigará sin ir</speak-char>
       <condition />
-      <speak-char idTarget="ReciclillaEsc2">Entonces tenemos que tirar las cosas a su contenedor para poder ir todos a la fiesta</speak-char>
+      <speak-char idTarget="ReciclillaEsc2">Tendremos que tirar cada cosa en su contenedor para poder ir todos a la fiesta</speak-char>
       <condition />
-      <speak-char idTarget="ReciclillaEsc2">Vamos chicos</speak-char>
+      <speak-char idTarget="ReciclillaEsc2">¡Vamos chicos!</speak-char>
       <condition />
       <end-conversation>
         <effect>
-          <activate flag="Introducción" />
-          <condition />
-          <activate flag="inicio tutorial" />
+          <activate flag="ConvReciclilla1" />
           <condition />
         </effect>
       </end-conversation>
@@ -1552,7 +1554,7 @@
       <condition />
       <speak-char idTarget="Reciclilla">Dicen que van a montar una gran fiesta en el cementerio</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">¿Que te parece si vamos a por Esqueletillo y vamos a la fiesta?</speak-char>
+      <speak-char idTarget="Reciclilla">¿Qué te parece si vamos a por Esqueletillo para ir a la fiesta?</speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
@@ -1596,22 +1598,22 @@
       <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="285" editor-y="50">
-      <speak-char idTarget="Reciclilla">El contenedor marrón es para tirar restos de comida y eso</speak-char>
+      <speak-char idTarget="Reciclilla">El contenedor marrón es para tirar restos de comida y otros residuos orgánicos.</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">El contenedor amarillo es para los plásticos</speak-char>
+      <speak-char idTarget="Reciclilla">El contenedor amarillo es para latas, briks y envases de plástico. También bandejas de corcho blanco y aerosoles.</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">El contenedor azul es para tirar papeles o cartones</speak-char>
+      <speak-char idTarget="Reciclilla">El contenedor azul es para papeles y cartones. Es muy importante plegarlos y dejarlos dentro del contenedor.</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">Y el contenedor verde es para cristales</speak-char>
+      <speak-char idTarget="Reciclilla">Y el contenedor verde es para envases de vidrio, tarros, frascos y botellas. NUNCA cristal y cerámica.</speak-char>
       <condition />
       <child nodeindex="2" />
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="520" editor-y="50">
-      <speak-char idTarget="Reciclilla">Para tirar algo solo tienes que seleccionarlo con el botón derecho de tu ratón y seleccionar el cubo al que lo quieres tirar</speak-char>
+      <speak-char idTarget="Reciclilla">Para tirar algo solo tienes que pulsarlo con tu ratón y seleccionar el cubo al que lo quieres tirar</speak-char>
       <condition />
       <speak-char idTarget="Reciclilla">Pero cuidado, si intentas tirar algo al cubo que no es la bruja Brujilda se cabreará</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">Si se cabrea mucho podría ir a contarselo a la madre de Esqueletillo y no le dejaría salir ni en mil años</speak-char>
+      <speak-char idTarget="Reciclilla">Si se cabrea mucho podría ir a contárselo a la madre de Esqueletillo y no le dejaría salir ni en mil años</speak-char>
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
