@@ -67,6 +67,7 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no" />
     </actions>
   </character>
   <character id="Reciclilla">
@@ -237,7 +238,85 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <character id="ReciclillaFinal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ReciclillaAnim.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="FinJuego" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="EsqueletilloFinal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/EsqueletilloD.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="FinJuego" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <scene id="Inicio" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -313,16 +392,16 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="no" x="63" y="242" width="169" height="124" hasInfluenceArea="no" idTarget="main1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="60" y="240" width="169" height="124" hasInfluenceArea="no" idTarget="main1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
-        <point x="63" y="329" />
-        <point x="75" y="262" />
-        <point x="112" y="242" />
-        <point x="177" y="245" />
-        <point x="207" y="254" />
-        <point x="232" y="334" />
-        <point x="179" y="362" />
-        <point x="122" y="366" />
+        <point x="60" y="327" />
+        <point x="72" y="260" />
+        <point x="109" y="240" />
+        <point x="174" y="243" />
+        <point x="204" y="252" />
+        <point x="229" y="332" />
+        <point x="176" y="360" />
+        <point x="119" y="364" />
         <condition>
           <active flag="Fin tutorial" />
         </condition>
@@ -352,11 +431,8 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="896" y="-2" width="120" height="94" hasInfluenceArea="no" idTarget="main2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
-        <condition>
-          <active flag="Fin main1" />
-        </condition>
+      <exit rectangular="yes" x="899" y="2" width="120" height="94" hasInfluenceArea="no" idTarget="main2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
@@ -374,7 +450,7 @@
       <object-ref idTarget="bolsa1" x="829" y="197" scale="0.15" layer="1" hasInfluenceArea="no" />
       <object-ref idTarget="revista" x="492" y="583" scale="0.08351044" layer="3" hasInfluenceArea="no" />
       <object-ref idTarget="regalo" x="177" y="595" scale="0.203952" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="flecha" x="956" y="101" scale="0.1443695" layer="16" hasInfluenceArea="no" />
+      <object-ref idTarget="flecha" x="826" y="103" scale="0.1443695" layer="16" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Brujilda" x="186" y="265" scale="0.1129539" orientation="2" layer="14" hasInfluenceArea="no" />
@@ -390,24 +466,44 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="833" y="-1" width="128" height="96" hasInfluenceArea="no" idTarget="FinJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
     <objects>
-      <object-ref idTarget="CuboOrganico" x="652" y="766" scale="0.25" layer="11" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboEnvases" x="742" y="768" scale="0.25" layer="10" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboVidrio" x="833" y="778" scale="0.25" layer="9" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboPapel" x="921" y="767" scale="0.25" layer="8" hasInfluenceArea="no" />
-      <object-ref idTarget="platano" x="153" y="627" scale="0.1" layer="14" hasInfluenceArea="no" />
-      <object-ref idTarget="cerveza" x="325" y="725" scale="0.1077995" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="botella2" x="389" y="702" scale="0.07405727" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="corcho" x="358" y="757" scale="0.153061" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="cafe" x="632" y="652" scale="0.1671496" layer="12" hasInfluenceArea="no" />
-      <object-ref idTarget="latas" x="454" y="703" scale="0.1679927" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="leche" x="52" y="652" scale="0.2320583" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="revista" x="197" y="781" scale="0.1201055" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="pielPlatano" x="230" y="644" scale="0.09804159" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboOrganico" x="652" y="766" scale="0.25" layer="12" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="742" y="768" scale="0.25" layer="11" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="833" y="778" scale="0.25" layer="10" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="921" y="767" scale="0.25" layer="9" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="153" y="627" scale="0.1" layer="15" hasInfluenceArea="no" />
+      <object-ref idTarget="cerveza" x="325" y="725" scale="0.1077995" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="botella2" x="389" y="702" scale="0.07405727" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="corcho" x="358" y="757" scale="0.153061" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="cafe" x="632" y="652" scale="0.1671496" layer="13" hasInfluenceArea="no" />
+      <object-ref idTarget="latas" x="454" y="703" scale="0.1679927" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="leche" x="52" y="652" scale="0.2320583" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="revista" x="197" y="781" scale="0.1201055" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="pielPlatano" x="230" y="644" scale="0.09804159" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="flecha" x="766" y="105" scale="0.1533733" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Brujilda" x="191" y="309" scale="0.1438849" orientation="2" layer="13" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaAyuda" x="819" y="711" scale="0.1073488" orientation="2" layer="7" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="191" y="309" scale="0.1438849" orientation="2" layer="14" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaAyuda" x="819" y="711" scale="0.1073488" orientation="2" layer="8" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="FinJuego" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo05.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="EsqueletilloFinal" x="507" y="529" scale="0.4855419" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="782" y="503" scale="0.1478956" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
@@ -1458,5 +1554,20 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
+  </graph-conversation>
+  <graph-conversation id="FinJuego">
+    <dialogue-node nodeindex="0" editor-x="130" editor-y="64">
+      <speak-char idTarget="ReciclillaFinal">¡Lo logramos! Gracias a ti Esqueletillo ha podido venir con nosotros a la fiesta</speak-char>
+      <condition />
+      <speak-char idTarget="EsqueletilloFinal">Te estoy muy agradecido. Si tan solo mi padre estuviera muerto para venir con nosotros...</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaFinal">Estoy segura que tu padre te extraña y recuerda siempre, Esqueletillo</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaFinal">La moral de la historia es: se consciente de tu basura, ayuda a reciclar, y así Esqueletillo no vera a su padre en un buen tiempo</speak-char>
+      <condition />
+      <speak-char idTarget="ReciclillaFinal">¡Feliz dia de los muertos!</speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
   </graph-conversation>
 </eAdventure>
