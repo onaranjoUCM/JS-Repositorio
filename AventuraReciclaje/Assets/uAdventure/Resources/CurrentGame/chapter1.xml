@@ -103,7 +103,7 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <inactive flag="inicio tutorial" />
+          <inactive flag="Introducción" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ReciclillaCon1" />
@@ -112,7 +112,7 @@
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <active flag="ConvReciclilla1" />
+          <active flag="Introducción" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Tutorial1" />
@@ -1542,7 +1542,7 @@
       <condition />
       <end-conversation>
         <effect>
-          <activate flag="ConvReciclilla1" />
+          <activate flag="Introducción" />
           <condition />
         </effect>
       </end-conversation>
