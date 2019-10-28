@@ -316,7 +316,109 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <character id="PuntuacionAlta">
+    <resources name="No name">
+      <condition>
+        <active flag="PuntuacionAlta" />
+      </condition>
+      <asset type="standup" uri="assets/animation/PuntuacionAltaV.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/PuntuacionAltaV.eaa.xml" />
+      <asset type="standright" uri="assets/animation/PuntuacionAltaV.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/PuntuacionAltaV.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="PuntuacionMedia">
+    <resources name="No name">
+      <condition>
+        <active flag="PuntuacionMedia" />
+      </condition>
+      <asset type="standup" uri="assets/animation/PuntuacionMediaV.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/PuntuacionMediaV.eaa.xml" />
+      <asset type="standright" uri="assets/animation/PuntuacionMediaV.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/PuntuacionMediaV.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="PuntuacionBaja">
+    <resources name="No name">
+      <condition>
+        <active flag="PuntuacionBaja" />
+      </condition>
+      <asset type="standup" uri="assets/animation/PuntuacionBajaV.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/PuntuacionBajaV.eaa.xml" />
+      <asset type="standright" uri="assets/animation/PuntuacionBajaV.eaa.xml" />
+      <asset type="standleft" uri="assets/animation/PuntuacionBajaV.eaa.xml" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <scene id="Inicio" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -425,7 +527,7 @@
       <atrezzo-ref idTarget="Pantalla" x="1253" y="1415" scale="1" layer="0" />
     </atrezzo>
   </scene>
-  <scene id="main1" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="main1" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -506,8 +608,11 @@
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="EsqueletilloFinal" x="626" y="1130" scale="0.5234323" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaFinal" x="1279" y="1119" scale="0.1809286" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1130" scale="0.5234323" orientation="2" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1119" scale="0.1809286" orientation="2" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionAlta" x="1344" y="534" scale="0.8201609" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionMedia" x="1371" y="618" scale="0.8501211" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionBaja" x="1403" y="506" scale="0.7695253" orientation="2" layer="2" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
@@ -1415,7 +1520,7 @@
     <dialogue-node nodeindex="3" editor-x="691" editor-y="37">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="main2" x="480" y="576" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="main2" x="480" y="405" transitionTime="0" transitionType="0" />
           <condition>
             <equals var="ItemsPicked" value="10" />
           </condition>
@@ -1697,16 +1802,41 @@
     <dialogue-node nodeindex="0" editor-x="130" editor-y="64">
       <speak-char idTarget="ReciclillaFinal">¡Lo logramos! Gracias a ti Esqueletillo ha podido venir con nosotros a la fiesta.</speak-char>
       <condition />
-      <speak-char idTarget="Reciclilla">Lo has hecho muy bien, se nota que has aprendido mucho sobre el reciclaje.</speak-char>
+      <child nodeindex="1" />
+      <effect>
+        <activate flag="PuntuacionAlta" />
+        <condition>
+          <greater-equals-than var="Puntos" value="1500" />
+        </condition>
+        <activate flag="PuntuacionMedia" />
+        <condition>
+          <greater-equals-than var="Puntos" value="1000" />
+          <less-equals-than var="Puntos" value="1499" />
+        </condition>
+        <activate flag="PuntuacionBaja" />
+        <condition>
+          <less-equals-than var="Puntos" value="999" />
+        </condition>
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="365" editor-y="64">
+      <speak-char idTarget="ReciclillaFinal">Lo has hecho muy bien, se nota que has aprendido mucho sobre el reciclaje.</speak-char>
       <condition>
-        <greater-than var="Puntos" value="0" />
+        <active flag="PuntuacionAlta" />
       </condition>
-      <speak-char idTarget="Reciclilla">Pero parece que te ha costado un poco, seguro que la próxima vez te sale mejor.</speak-char>
+      <speak-char idTarget="ReciclillaFinal">No ha estado mal, pero se que podrías hacerlo mejor</speak-char>
       <condition>
-        <less-equals-than var="Puntos" value="0" />
+        <active flag="PuntuacionMedia" />
+      </condition>
+      <speak-char idTarget="ReciclillaFinal">Pero parece que te ha costado un poco, seguro que la próxima vez te sale mejor.</speak-char>
+      <condition>
+        <active flag="PuntuacionBaja" />
       </condition>
       <speak-char idTarget="EsqueletilloFinal">Te estoy muy agradecido. Si no fuera por tí, me habría tenido que quedar en casa mientras los demás se divertían.</speak-char>
       <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="600" editor-y="64">
       <speak-char idTarget="ReciclillaFinal">Recuerda siempre reciclar cada tipo de basura en su contenedor. ¡Hay que pensar en el medio ambiente!</speak-char>
       <condition />
       <speak-char idTarget="ReciclillaFinal">¡Y ahora no esperemos mas Esqueletillo, vamos a la fiesta!</speak-char>
