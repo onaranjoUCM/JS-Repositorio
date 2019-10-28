@@ -418,7 +418,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="Inicio" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Inicio" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -527,7 +527,7 @@
       <atrezzo-ref idTarget="Pantalla" x="1253" y="1415" scale="1" layer="0" />
     </atrezzo>
   </scene>
-  <scene id="main1" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="main1" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -602,17 +602,17 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo003.png" />
+      <asset type="background" uri="assets/background/fondo0031.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="EsqueletilloFinal" x="626" y="1130" scale="0.5234323" orientation="2" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaFinal" x="1279" y="1119" scale="0.1809286" orientation="2" layer="3" hasInfluenceArea="no" />
-      <character-ref idTarget="PuntuacionAlta" x="1344" y="534" scale="0.8201609" orientation="2" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="PuntuacionMedia" x="1371" y="618" scale="0.8501211" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="PuntuacionBaja" x="1403" y="506" scale="0.7695253" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1120" scale="0.5188206" orientation="2" layer="4" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1109" scale="0.1793345" orientation="2" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionAlta" x="954" y="530" scale="0.8129348" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionMedia" x="1029" y="577" scale="0.842631" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="PuntuacionBaja" x="1002" y="530" scale="0.7627453" orientation="2" layer="2" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
@@ -1832,7 +1832,7 @@
       <condition>
         <active flag="PuntuacionBaja" />
       </condition>
-      <speak-char idTarget="EsqueletilloFinal">Te estoy muy agradecido. Si no fuera por tí, me habría tenido que quedar en casa mientras los demás se divertían.</speak-char>
+      <speak-char idTarget="EsqueletilloFinal">#O Te estoy muy agradecido. Si no fuera por tí, me habría tenido que quedar en casa mientras los demás se divertían.</speak-char>
       <condition />
       <child nodeindex="2" />
     </dialogue-node>
