@@ -3,20 +3,20 @@
 <comment> Project Configuration </comment>
 <entry key="Chapter0.main.X">373</entry>
 <entry key="Chapter0.main.Y">383</entry>
-<entry key="Chapter0.Introduccion.X">257</entry>
-<entry key="Chapter0.Introduccion.Y">-23</entry>
+<entry key="Chapter0.Introduccion.X">169</entry>
+<entry key="Chapter0.Introduccion.Y">-24</entry>
 <entry key="Chapter0.Casadeesqueletillo.X">250</entry>
 <entry key="Chapter0.Casadeesqueletillo.Y">115</entry>
-<entry key="Chapter0.Tutorial.X">334</entry>
-<entry key="Chapter0.Tutorial.Y">297</entry>
-<entry key="Chapter0.CasaEsqueletillo.X">256</entry>
-<entry key="Chapter0.CasaEsqueletillo.Y">138</entry>
-<entry key="Chapter0.main1.X">236</entry>
-<entry key="Chapter0.main1.Y">518</entry>
-<entry key="Chapter0.main2.X">493</entry>
-<entry key="Chapter0.main2.Y">416</entry>
-<entry key="Chapter0.Inicio.X">-310</entry>
-<entry key="Chapter0.Inicio.Y">-11</entry>
-<entry key="Chapter0.FinJuego.X">763</entry>
-<entry key="Chapter0.FinJuego.Y">443</entry>
+<entry key="Chapter0.Tutorial.X">609</entry>
+<entry key="Chapter0.Tutorial.Y">221</entry>
+<entry key="Chapter0.CasaEsqueletillo.X">437</entry>
+<entry key="Chapter0.CasaEsqueletillo.Y">-21</entry>
+<entry key="Chapter0.main1.X">397</entry>
+<entry key="Chapter0.main1.Y">226</entry>
+<entry key="Chapter0.main2.X">188</entry>
+<entry key="Chapter0.main2.Y">237</entry>
+<entry key="Chapter0.Inicio.X">-236</entry>
+<entry key="Chapter0.Inicio.Y">-22</entry>
+<entry key="Chapter0.FinJuego.X">-229</entry>
+<entry key="Chapter0.FinJuego.Y">226</entry>
 </properties>

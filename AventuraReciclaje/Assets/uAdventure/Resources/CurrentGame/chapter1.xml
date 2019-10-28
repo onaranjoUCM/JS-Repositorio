@@ -390,39 +390,39 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo03.jpg" />
+      <asset type="background" uri="assets/background/fondo8.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="no" x="60" y="240" width="169" height="124" hasInfluenceArea="no" idTarget="main1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="683" y="292" width="241" height="252" hasInfluenceArea="no" idTarget="main1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
-        <point x="60" y="327" />
-        <point x="72" y="260" />
-        <point x="109" y="240" />
-        <point x="174" y="243" />
-        <point x="204" y="252" />
-        <point x="229" y="332" />
-        <point x="176" y="360" />
-        <point x="119" y="364" />
+        <point x="683" y="462" />
+        <point x="707" y="383" />
+        <point x="775" y="344" />
+        <point x="832" y="292" />
+        <point x="904" y="386" />
+        <point x="924" y="463" />
+        <point x="888" y="529" />
+        <point x="756" y="544" />
         <condition>
           <active flag="Fin tutorial" />
         </condition>
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="CuboOrganico" x="275" y="250" scale="0.1871952" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboEnvases" x="347" y="250" scale="0.1875372" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboVidrio" x="425" y="258" scale="0.1939021" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboPapel" x="501" y="252" scale="0.1942064" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboOrganico" x="988" y="526" scale="0.4" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="1135" y="530" scale="0.4" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="1435" y="542" scale="0.4" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="1291" y="528" scale="0.4" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Reciclilla" x="521" y="580" scale="0.1441935" orientation="2" layer="6" hasInfluenceArea="no" />
-      <character-ref idTarget="Brujilda" x="425" y="147" scale="0.06168425" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Reciclilla" x="1766" y="1117" scale="0.2169024" orientation="2" layer="6" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="359" y="382" scale="0.1662579" orientation="2" layer="1" hasInfluenceArea="no" />
     </characters>
     <atrezzo>
-      <atrezzo-ref idTarget="Pantalla" x="393" y="558" scale="0.3810724" layer="0" />
+      <atrezzo-ref idTarget="Pantalla" x="1253" y="1415" scale="1" layer="0" />
     </atrezzo>
   </scene>
   <scene id="main1" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -465,35 +465,35 @@
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/fondo04.jpg" />
+      <asset type="background" uri="assets/background/fondo041.jpg" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="833" y="-1" width="128" height="96" hasInfluenceArea="no" idTarget="FinJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="833" y="0" width="128" height="67" hasInfluenceArea="no" idTarget="FinJuego" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <objects>
-      <object-ref idTarget="CuboOrganico" x="652" y="766" scale="0.25" layer="12" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboEnvases" x="742" y="768" scale="0.25" layer="11" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboVidrio" x="833" y="778" scale="0.25" layer="10" hasInfluenceArea="no" />
-      <object-ref idTarget="CuboPapel" x="921" y="767" scale="0.25" layer="9" hasInfluenceArea="no" />
-      <object-ref idTarget="platano" x="159" y="631" scale="0.1" layer="15" hasInfluenceArea="no" />
-      <object-ref idTarget="cerveza" x="348" y="684" scale="0.1077995" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="botella2" x="432" y="640" scale="0.08183251" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="corcho" x="348" y="770" scale="0.153061" layer="7" hasInfluenceArea="no" />
-      <object-ref idTarget="cafe" x="553" y="646" scale="0.1671496" layer="13" hasInfluenceArea="no" />
-      <object-ref idTarget="latas" x="501" y="740" scale="0.1679927" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="leche" x="52" y="652" scale="0.2320583" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="revista" x="172" y="758" scale="0.1201055" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="pielPlatano" x="244" y="643" scale="0.09804159" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="flecha" x="896" y="101" scale="0.1533733" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboOrganico" x="652" y="538" scale="0.1757813" layer="12" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboEnvases" x="742" y="540" scale="0.1757813" layer="11" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboVidrio" x="833" y="547" scale="0.1757813" layer="10" hasInfluenceArea="no" />
+      <object-ref idTarget="CuboPapel" x="921" y="539" scale="0.1757813" layer="9" hasInfluenceArea="no" />
+      <object-ref idTarget="platano" x="159" y="443" scale="0.0703125" layer="15" hasInfluenceArea="no" />
+      <object-ref idTarget="cerveza" x="348" y="480" scale="0.07579652" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="botella2" x="435" y="456" scale="0.06134801" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="corcho" x="312" y="529" scale="0.107621" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="cafe" x="559" y="467" scale="0.1254132" layer="13" hasInfluenceArea="no" />
+      <object-ref idTarget="latas" x="252" y="430" scale="0.1181199" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="leche" x="52" y="458" scale="0.163166" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="revista" x="172" y="532" scale="0.08444918" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="pielPlatano" x="490" y="527" scale="0.06488565" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="flecha" x="896" y="71" scale="0.1078406" layer="0" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Brujilda" x="168" y="290" scale="0.1438849" orientation="2" layer="14" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaAyuda" x="819" y="711" scale="0.1073488" orientation="2" layer="8" hasInfluenceArea="no" />
+      <character-ref idTarget="Brujilda" x="168" y="203" scale="0.1011691" orientation="2" layer="14" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaAyuda" x="683" y="449" scale="0.07547963" orientation="2" layer="8" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="FinJuego" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -1226,7 +1226,7 @@
   </atrezzoobject>
   <atrezzoobject id="Pantalla">
     <resources name="No name">
-      <asset type="image" uri="assets/image/kisspng-projection-screens-multimedia-projectors-computer-5af37cc8989cd4.9531311515259066326251.png" />
+      <asset type="image" uri="" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
