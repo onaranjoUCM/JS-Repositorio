@@ -607,13 +607,38 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="1699" y="22" width="281" height="75" hasInfluenceArea="no" idTarget="Creditos" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="Créditos" />
+      </exit>
+    </exits>
     <characters>
-      <character-ref idTarget="EsqueletilloFinal" x="626" y="1120" scale="0.5188206" orientation="2" layer="4" hasInfluenceArea="no" />
-      <character-ref idTarget="ReciclillaFinal" x="1279" y="1109" scale="0.1793345" orientation="2" layer="3" hasInfluenceArea="no" />
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1120" scale="0.5188206" orientation="2" layer="5" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1109" scale="0.1793345" orientation="2" layer="4" hasInfluenceArea="no" />
       <character-ref idTarget="PuntuacionAlta" x="954" y="530" scale="0.8129348" orientation="2" layer="0" hasInfluenceArea="no" />
       <character-ref idTarget="PuntuacionMedia" x="1029" y="577" scale="0.842631" orientation="2" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="PuntuacionBaja" x="1002" y="530" scale="0.7627453" orientation="2" layer="2" hasInfluenceArea="no" />
     </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="creditosLabel" x="1847" y="101" scale="0.5689176" layer="3" />
+    </atrezzo>
+  </scene>
+  <scene id="Creditos" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondo0031.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="EsqueletilloFinal" x="626" y="1120" scale="0.5188206" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="ReciclillaFinal" x="1279" y="1109" scale="0.1793345" orientation="2" layer="1" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="NombresFuentes" x="1111" y="761" scale="0.554062" layer="0" />
+    </atrezzo>
   </scene>
   <object id="CuboOrganico" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -1332,6 +1357,34 @@
   <atrezzoobject id="Pantalla">
     <resources name="No name">
       <asset type="image" uri="" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="NombresFuentes">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Sin nombre.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="creditosLabel">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/creditos.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
